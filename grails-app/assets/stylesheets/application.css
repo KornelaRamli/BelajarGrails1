@@ -1,0 +1,68 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c763d;
+}
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: snow;
+    padding: 9px 18px;
+    text-decoration: none;
+
+}
+
+li a.active{
+    background-color: #16f8db;
+    color: white;
+}
+
+li a:hover:not(.active){
+    background-color: #b5f4c4;
+    color: black;
+}
+
+#map{
+    width:550px;
+    height:400px;
+}
+
+#mapShow{
+    width:450px;
+    height:300px;
+}
+
+#fullmap{
+    width:1250px;
+    height:500px;
+}
+
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+    background: #e93434;
+    color: #ffffff;
+}
+
+div{
+    padding: 5px 15px 5px 15px;
+}
